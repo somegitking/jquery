@@ -1,3 +1,6 @@
+<!--1. on() 메소드 공부하기-->
+<!--2. append() 메소드 공부하기-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +25,9 @@
 
 
 <script>
-    $(".node").on("click", function (e){
-        let a = $(e.target)
-        a.append(`<div class = 'node'>ROOT</div>`)
+    $(".node").on("click", function (e){ // 클릭 이벤트를 감지함
+        let a = $(e.target) //클릭 이벤트가 발생하는 element를 확인해서
+        a.append(`<div class = 'node'>ROOT</div>`) //해당 element에 대해서 콘텐트 아래에 div 태그를 추가함
 
 
     })
