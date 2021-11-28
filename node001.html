@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+<style>
+    .node{
+        width: 50px;
+        background-color: green;
+        padding-left: 20px;
+        text-decoration: underline;
+    }
+</style>
+
+<div class = "node">ROOT</div>
+
+
+<script>
+    $(".node").on("click", function (e){
+        let a = $(e.target)
+        a.append(`<div class = 'node'>ROOT</div>`)
+
+
+    })
+
+
+</script>
+
+</body>
+</html>
